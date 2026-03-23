@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HABIT-TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">      
+
+    <h1>My Habit Tracker</h1>
+
+    <div class="search-area">     
+        <input type="text" id="search" placeholder="Search habit..." onkeyup="searchHabit()">
+    </div>
+
+    <div class="sort-area">       
+        <select  id="sort" onchange="sortHabits()">
+            <option value="default">Sort Habits</option>
+            <option value="streak">Sort by Streak</option>
+            <option value="category">Sort by Category</option>
+            <option value="name">Sort by Name</option>
+        </select>
+    </div>
+
+    <div class="input-area">       
+    <input type="text" id="habitinput" placeholder="Enter new habit">
+    <select id="category">          
+        <option value="Study">Study</option>
+        <option value="Health">Health</option>
+        <option value="Personal">Personal</option>
+        <option value="Exercise">Exercise</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <div class="add-area">    
+        <button onclick="addHabit()">Add Habit</button>
+    </div>
+
+    <div class="reset-area">    
+        <button onclick="resetData()">Reset All</button>
+    </div>
+    </div>
+
+    <ul id="habitlist"></ul>
+    <h2>Your Points:<span id="points">0</span></h2>
+    <h3 id="totalStreak">🔥Total Streaks: 0</h3>
+    <h3 id="progress">Today's Progress: 0%</h3>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <h3 id="stats">Statistics</h3>
+    <p id="totalHabits"></p>
+    <p id="completedHabits"></p>
+    <p id="pendingHabits"></p>
+    <p id="successRate"></p>
+    <h3 id="badge">🏆Badge: None</h3>
+    <canvas id="weeklyChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
