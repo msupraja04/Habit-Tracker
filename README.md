@@ -122,10 +122,6 @@ Through this project, I gained hands-on experience in:
 
 Supraja Manda
 
-Electronics and Communication Engineering (ECE)
-
-B.Tech Student
-
 ## Deployment
 
 This project is deployed using GitHub Pages and can be accessed directly through the live demo link above.
